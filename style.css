@@ -1,0 +1,167 @@
+/* de * -teken gebruik je om alles op de pagina aan te spreken. Ook wel reset genoemd 
+bijvoorbeeld:
+*{
+  margin-left:6%;
+  padding:0%;
+}
+*/
+
+h1,
+h2,
+p {
+  color: #333;
+  margin-left: 6%;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1180px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+header nav {
+  float: right;
+}
+
+header nav h2 {
+  text-indent: -10000px;
+  height: 0;
+  margin: 0;
+}
+
+header nav li {
+  float: left;
+  list-style-type: none;
+  margin: 10px 20px;
+}
+
+header nav li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+#main-banner,
+#main-banner img {
+  width: 100%;
+}
+
+/*link*/
+a {
+  color: rgb(31, 31, 31);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: olivedrab;
+  font-weight: bolder;
+}
+
+.button {
+  background-color: olivedrab;
+  font-weight: bold;
+  padding: 8px;
+  width: 100%;
+  border-radius: 10px;
+  border-style: none;
+}
+
+.button:hover {
+  background-color: #333;
+  color: white;
+}
+
+body {
+  background-color: #ffff;
+  color: rgb(31, 31, 31);
+  font: normal 14px arial, helvetica, sans-serif;
+  line-height: 1.8em;
+  margin: 0;
+}
+
+.my-form {
+  float: inline-end;
+  margin: auto;
+  padding: 3%;
+  background-color: rgb(211, 211, 211);
+  max-width: 30%;
+  border-radius: 15px;
+}
+
+.my-form .form-group {
+  padding-bottom: 15px;
+}
+/* display block zorgt ervoor dat de labels allemaal een eigen regel krijgen / onder elkaar komen*/
+.my-form label {
+  display: block;
+}
+
+.my-form input[type="text"],
+.my-form textarea {
+  padding: 8px;
+  width: 100%;
+  border-radius: 10px;
+  border-style: none;
+}
+
+/* MEDIA QUERIES*/
+
+@media (max-width: 1024px) {
+  /* Changes for exercise */
+  body {
+    background-color: #ff0000;
+    color: #111111;
+    font-size: 12px;
+  }
+  main {
+    margin: 0 20%;
+  }
+  /* Extra changes */
+  header h1 {
+    font-size: 12px;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+  header nav li {
+    font-size: 3.5rem;
+    display: inline;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom-width: 0;
+    margin-right: 2rem;
+    border: 3px solid yellow;
+    border-radius: 0.5rem;
+    padding: 0.5rem 3rem;
+  }
+  header nav li.last {
+    border-bottom-width: 3px;
+  }
+
+  footer nav li {
+    display: inline;
+  }
+  footer nav {
+    margin: 0 auto;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 700px) {
+  /* Changes for exercise */
+  body {
+    background-color: #000000;
+    color: #111111;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Changes for exercise */
+  body {
+    background-color: #3700ff;
+    color: #111111;
+    font-size: 12px;
+  }
+}
